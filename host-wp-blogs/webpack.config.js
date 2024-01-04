@@ -42,8 +42,11 @@ module.exports = (_, argv) => ({
   plugins: [
     new ModuleFederationPlugin({
       name: "host_wp_blogs",
+      library:{type:"module"},
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        headerApp: "http://localhost:5001/assets/remoteEntry.js"
+      },
       exposes: {},
       shared: {
         ...deps,
@@ -58,7 +61,8 @@ module.exports = (_, argv) => ({
       },
     }),
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./index.ejs",
+      inject: false,
     }),
   ],
 });
