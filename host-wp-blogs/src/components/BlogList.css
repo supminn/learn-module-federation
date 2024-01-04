@@ -1,0 +1,35 @@
+.blog-list {
+    padding: 20px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    margin-top: 0;
+  }
+  
+  .card-description {
+    color: #666;
+  }
+  
+  .card-author {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 475px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

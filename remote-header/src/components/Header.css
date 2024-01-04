@@ -1,0 +1,76 @@
+.navbar {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .logo-container {
+    border: 1px solid gray;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+    padding-top: 5px;
+  }
+
+  .logo {
+    font-size: 5px;
+    font-weight: bold;
+  }
+
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+  .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .login-btn {
+    padding: 8px 16px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-btn-container {
+    /* You can adjust the margin to properly position the button */
+    margin-left: auto;
+  }
+  
+
+  @media (max-width: 475px) {
+    .logo{
+      font-size: 3.5px;
+    }
+    .title{
+      font-size: 18px
+    }
+    .navbar{
+      padding: 0.5rem 0.75rem;
+    }
+  }
