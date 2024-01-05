@@ -6,7 +6,7 @@ import federation from "@originjs/vite-plugin-federation";
 export default defineConfig({
   plugins: [react(), federation({
     name:"header_app",
-    filename: "remoteEntry.js",
+    filename: "remoteHeader.js",
     exposes:{
       "./Header":"./src/components/Header"
     },

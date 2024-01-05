@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), federation({
     name:"video_app",
     remotes:{
-      headerApp: "http://localhost:5001/assets/remoteEntry.js",
+      headerApp: "http://localhost:5001/assets/remoteHeader.js",
     },
     shared:["react","react-dom"]
   })],

@@ -54,9 +54,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "host_wp_blogs",
       library: { type: "module" },
-      filename: "remoteEntry.js",
+      filename: "remoteHeader.js",
       remotes: {
-        headerModule: "http://localhost:5001/assets/remoteEntry.js",
+        headerModule: "http://localhost:5001/assets/remoteHeader.js",
       },
       exposes: {},
       shared: {
