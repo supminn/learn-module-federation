@@ -26,5 +26,17 @@ import { Video } from "./types";
       thumbnail: 'https://via.placeholder.com/200',
       author: 'Author 4',
     },
+    {
+      id: 5,
+      title: 'Video Title 5',
+      thumbnail: 'https://via.placeholder.com/200',
+      author: 'Author 5',
+    },
+    {
+      id: 6,
+      title: 'Video Title 6',
+      thumbnail: 'https://via.placeholder.com/200',
+      author: 'Author 6',
+    },
     // Add more dummy data as needed
   ];
