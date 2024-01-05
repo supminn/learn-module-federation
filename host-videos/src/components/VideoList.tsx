@@ -9,7 +9,6 @@ interface VideoListProps {
 const VideoList: React.FC<VideoListProps> = ({ videos }) => {
   return (
     <div className="video-list">
-      <h2>List of Videos</h2>
       <div className="cards-container">
         {videos.map((video) => (
           <div className="card" key={video.id}>

@@ -14,12 +14,19 @@
     border: 1px solid gray;
     border-radius: 100%;
     margin-right: 0.5rem;
-    padding-top: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo {
     font-size: 5px;
     font-weight: bold;
+  }
+
+  .logo-text{
+
   }
 
   .logo:hover {

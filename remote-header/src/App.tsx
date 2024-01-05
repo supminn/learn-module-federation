@@ -1,11 +1,13 @@
 import './App.css'
+import reactLogo from './assets/react.svg'
 import Header from './components/Header'
 
 function App() {
 
   return (
     <>
-    <Header title='Header Component'/>
+    <Header logo={reactLogo} title='Header Component'/>
+    <Header  title='Header Component'/>
     </>
   )
 }

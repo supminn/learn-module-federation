@@ -4,11 +4,15 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import BlogList from "./components/BlogList";
 import { dummyBlogs } from "./utils/sampleData";
-// import Header from "./components/Header";
+// @ts-ignore
+import logo from "./assets/react.svg";
+// @ts-ignore
+import HeaderModule from "headerModule/Header";
+const Header = HeaderModule.default;
 
 const App = () => (
   <div className="container">
-    {/* <Header title="My Blogs" /> */}
+    <Header logo={logo} title="My Blogs" />
     <BlogList blogs={dummyBlogs} />
   </div>
 );

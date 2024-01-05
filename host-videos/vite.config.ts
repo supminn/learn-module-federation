@@ -8,8 +8,14 @@ export default defineConfig({
   plugins: [react(), federation({
     name:"video_app",
     remotes:{
-      headerApp: "http://localhost:50001/assets/remoteEntry.js",
+      headerApp: "http://localhost:5001/assets/remoteEntry.js",
     },
     shared:["react","react-dom"]
   })],
+  build: {
+    modulePreload: false,
+    target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
+  },
 })
