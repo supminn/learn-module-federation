@@ -54,11 +54,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "host_wp_blogs",
       library: { type: "module" },
-      filename: "remoteEntry.js",
       remotes: {
         headerModule: "http://localhost:5001/assets/remoteEntry.js",
       },
-      exposes: {},
       shared: {
         ...deps,
         react: {
@@ -70,6 +68,8 @@ module.exports = {
           requiredVersion: deps["react-dom"],
         },
       },
+      filename: "remoteEntry.js",
+      exposes: {},
     }),
     new HtmlWebPackPlugin({
       template: "./index.ejs",
