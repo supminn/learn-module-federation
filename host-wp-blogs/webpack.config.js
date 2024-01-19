@@ -28,8 +28,8 @@ module.exports = {
       {
         test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif|mp3)$/,
         use: {
-          loader: "file-loader"
-        }
+          loader: "file-loader",
+        },
       },
       {
         test: /\.(css|s[ac]ss)$/i,
@@ -54,9 +54,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "host_wp_blogs",
       library: { type: "module" },
-      filename: "remoteHeader.js",
+      filename: "remoteEntry.js",
       remotes: {
-        headerModule: "http://localhost:5001/assets/remoteHeader.js",
+        headerModule: "http://localhost:5001/assets/remoteEntry.js",
       },
       exposes: {},
       shared: {
